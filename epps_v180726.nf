@@ -22,8 +22,10 @@ process filter {
 
 	script:
 	"""
-	java -jar $PWD/bin/Trimmomatic-0.38/trimmomatic-0.38.jar PE -phred33 $forward ${dataset_id}.pe.1.fq ${dataset_id}.se.1.fq ${dataset_id}.pe.2.fq ${dataset_id}.se.2.fq ILLUMINACLIP:${PWD}/Trimmomatic-0.38/adapters/TruSeq3-PE.fa:3:30:6:1:TRUE SLIDINGWINDOW:10:20 MINLEN:50 2> trim.log
+	java -jar $PWD/bin/Trimmomatic-0.38/trimmomatic-0.38.jar PE -phred33 $forward ${dataset_id}.pe.1.fq ${dataset_id}.se.1.fq ${dataset_id}.pe.2.fq ${dataset_id}.se.2.fq ILLUMINACLIP:${PWD}/Trimmomatic-0.38/adapters/commbined.Illumina.fasta:3:30:6:1:TRUE SLIDINGWINDOW:10:20 MINLEN:50 2> trim.log
 	"""
+// or change commbined.Illumina.fasta to any specific adapter list
+
 }
 
 // demultiplex
