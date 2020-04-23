@@ -8,4 +8,6 @@ eDNA pipeline showcase (epps) using [Nextflow](https://www.nextflow.io/) from th
 
 # Citation: 
 
-Yiyuan Li, David C. Molik, Michael E. Pfrender, Biodiv Sci, 2019, EPPS, a metabarcoding bioinformatics pipeline using Nextflow
+Yiyuan Li, David C. Molik, Michael E. Pfrender (2019) EPPS, a metabarcoding bioinformatics pipeline using Nextflow. Biodiversity Science, 27(5), 567-575.
+
+http://www.biodiversity-science.net/EN/10.17520/biods.2018211
